@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "RevisionLock",
+  "version": "0.1.0",
+  "description": "Pause a browser message when the page changes underneath the draft.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_title": "Enable RevisionLock on this tab",
+    "default_popup": "popup.html"
+  }
+}

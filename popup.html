@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RevisionLock</title>
+    <style>
+      :root { color-scheme: dark; font-family: system-ui, sans-serif; }
+      body { width: 280px; margin: 0; padding: 20px; background: #111419; color: #f5f5f0; }
+      h1 { margin: 0 0 8px; font-size: 21px; letter-spacing: .02em; }
+      p { color: #bdc4cf; line-height: 1.45; font-size: 13px; }
+      button { width: 100%; border: 0; border-radius: 10px; padding: 12px 14px; background: #8fe3ff; color: #091116; font-weight: 800; cursor: pointer; }
+      button:disabled { opacity: .55; cursor: wait; }
+      #status { min-height: 20px; margin-top: 12px; font-size: 12px; color: #8fe3ff; }
+    </style>
+  </head>
+  <body>
+    <h1>RevisionLock</h1>
+    <p>Pause a send when this page changed while you were writing.</p>
+    <button id="enable" type="button">Enable on this tab</button>
+    <div id="status" role="status"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
